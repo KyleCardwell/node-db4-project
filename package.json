@@ -1,9 +1,31 @@
 {
   "name": "node-db4-project",
   "version": "1.0.0",
-  "scripts": {},
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LambdaSchool/node-db4-project.git"
+  },
+  "description": "Your assignment page on Canvas should contain instructions for submitting this project. If you are still unsure, reach out to Lambda Staff.",
+  "bugs": {
+    "url": "https://github.com/LambdaSchool/node-db4-project/issues"
+  },
+  "homepage": "https://github.com/LambdaSchool/node-db4-project#readme",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0"
   }
 }
