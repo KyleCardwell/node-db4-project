@@ -1,7 +1,7 @@
 
 exports.seed = function(knex) {
   // Deletes ALL existing entries
-  return knex('steps').del()
+  return knex('steps').truncate()
     .then(function () {
       // Inserts seed entries
       return knex('steps').insert([
@@ -11,6 +11,8 @@ exports.seed = function(knex) {
         {recipe_id: 1, step_number: 4, instructions: 'mix in chocolate chips'},
         {recipe_id: 1, step_number: 5, instructions: 'scoop dough balls onto baking sheet, 2" apart'},
         {recipe_id: 1, step_number: 6, instructions: 'bake for 10 min'},
+        {recipe_id: 2, step_number: 1, instructions: 'fill pot with water'},
+        {recipe_id: 1, step_number: 7, instructions: 'enjoy with milk'},
       ]);
     });
 };

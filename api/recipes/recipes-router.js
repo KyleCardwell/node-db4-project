@@ -4,7 +4,7 @@ const Recipes = require('./recipes-model.js')
 const router = express.Router()
 
 router.get('/', (req, res) => {
-    res.json({ meessage: 'api is working'})
+    res.json({ message: 'api is working'})
 })
 
 router.get('/:recipe_id', (req, res, next) => {
